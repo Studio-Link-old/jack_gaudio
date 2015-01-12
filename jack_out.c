@@ -92,7 +92,7 @@ done:
 
 static void setup_alsa_thread (jack_thread_info_t *info)
 {
-	au.device = "hw:1,0";
+	au.device = "hw:UAC2Gadget";
 	au.sample_rate = 48000;
 	au.channels = 2;
 	au.buffer = 500000;
