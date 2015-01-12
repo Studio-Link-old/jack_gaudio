@@ -174,7 +174,7 @@ static void setup_ports (jack_thread_info_t *info)
 	for (i = 0; i < nports; i++) {
 		char name[64];
 
-		sprintf (name, "input%d", i+1);
+		sprintf (name, "in%d", i+1);
 
 		if ((ports[i] = jack_port_register (info->client, name, JACK_DEFAULT_AUDIO_TYPE, JackPortIsInput, 0)) == 0) {
 			fprintf (stderr, "cannot register input port \"%s\"!\n", name);
